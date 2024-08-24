@@ -1,0 +1,144 @@
+<!Doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title> painter</title>
+         <style>
+
+         
+            body{
+                background-color: rgb(249, 250, 252);
+            }
+
+            nav{
+                
+                display:flex;
+                justify-content:space-between;
+
+            }
+            a{
+                color:black;
+                font-size:20px;
+                text-decoration:none;
+            }
+            .an{
+                color:black;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                text-decoration:none;
+                font-size: 20px;
+                padding:25px;
+            } 
+            #painting{
+                display:grid;
+                grid-template-areas: "header main"
+                                      "nav  menu"
+                                       "side  menu";
+            }
+            .item1{
+                grid-area: header;
+                
+            }
+            .item2{
+                grid-area: main;
+                
+            }
+            .item3{
+                grid-area: nav;
+                
+            }
+            .item4{
+                grid-area: menu;
+                
+            }
+            .item5{
+                grid-area: side;
+                
+            }
+            img{
+                height:100%;
+                width:100%;
+            }
+            #about{
+                text-align:center;
+            }
+            .p{
+                font-size:30px;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                padding:10px
+
+            }
+            p{
+                font-size:15px;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+            }
+            .p1{
+                color:rgb(235, 123, 145);
+                font-size:20px;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+            .lable{
+                font-size:15px;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+            }
+            input{
+                    height:25px;
+                    width: 500px;
+            }
+            #i{
+                align:center;
+                height: 400px;
+                width:300px
+            }
+            @media screen and ( 0px< width ) and ( width <768px ){
+                nav{
+                    display:flex;
+                }
+                #painting{
+                    display:flex;
+                    flex-direction: column;
+                }
+                #about{
+                    display:flex;
+                    flex-direction: column;
+                }
+            }
+           
+
+
+            </style>
+            </head>
+            <body>
+                <nav>
+                    <a class="an" href="#painting"> MY ART</a> <a class="an" href="#about">About</a>
+                </nav>
+                <div id="painting">
+                <img  class="item1" src="https://www.w3schools.com/w3images/streetart.jpg " alt="painting">
+                <img  class="item2" src=" https://www.w3schools.com/w3images/streetart3.jpg" alt="painting">
+                <img  class="item3"  src="https://www.w3schools.com/w3images/streetart2.jpg" alt=" painting">
+                <img  class="item4"  src="https://www.w3schools.com/w3images/streetart4.jpg" alt=" painting">
+                <img   class="item5" src="https://www.w3schools.com/w3images/streetart5.jpg" alt=" painting">
+                </div>
+
+                <div id="about">
+                    <p class="p">About</p>
+                    <img  id="i" src="https://www.w3schools.com/w3images/boy.jpg " alt="About" >
+                    <p>Just me, myself and I, exploring the universe of unknownment. I <br>have a heart of love and an interest of lorem ipsum and mauris<br> neque quam blog. I want to share my world with you. Praesent<br> tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta <br>lectus vitae, ultricies congue gravida diam non fringilla. Praesent<br> tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta<br> lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                     <p class="p1">Do not hesitate to contact me!</p>
+            
+                    <lable  for="name"> Name</lable><br>
+                    <input type="text" id="name" name="name"><br>
+                    <lable  for=" name"> Email</lable><br>
+                    <input type="text" id="name" name="name"><br>
+
+                    <lable  for=" name"> Message</lable><br>
+                    <input type="text" id="name" name="name"><br>
+                    <br>
+                    <input style="height:30px; width:510px; background-color:rgb(104, 112, 112); color:white; " type="submit" name="submit" value="Send"><br>
+                    <br>
+                  
+                    <p style="font-size:15px"></p> Powered By<a href="https://www.w3schools.com/css/default.asp">w3.css</a></p>
+                    </div>
+            </body>
+            </html>
